@@ -1,0 +1,68 @@
+<!-- "<!" ">"に-×2を付け加えたもので、コメントアウト（メモ）が可能に（画面に反映されないメモ）-->
+
+<!-- HTMLでのデータ受け取りはできないことに注意!!データの送信のみ可能 -->
+
+<!DOCTYPE html>  <!-- //html・xmlバージョンの指定 -->
+<html lang = "ja">   <!-- //言語の指定-->
+	<head>  <!-- //内部システムの取り決め用-->
+  <meta charset="UTF-8">　<!-- //文字コードの指定-->
+	<title>test15</title>　 <!-- //サイト名、ヘッダの名前部分-->
+  </head>
+	<body>  <!-- //サイトに実際に表示する内容-->
+		<form action = "action.html" method = "post">　<!--メソッドはpostかgetだが、getはデータ筒抜けで送信、postは封筒に入れるようにセキュリティーをかけて送信-->
+<dt>
+	<label for = "your_name">氏名：</label>
+<input type = "text" id = "your_name" name = "氏名">
+	<dt>
+		<label for = "your_pass">パスワード：</label>
+	<input type = "password" id = "your_pass" name = "パスワード">
+	<dt>
+		性別
+		<dt>
+		<ul>
+		<li><label for = "your_man">男性</label>
+		<input type = "radio" id = "your_man" name = "性別" value = "男"></li>
+		<li><label for = "your_woman">女性</label>
+		<input type = "radio" id = "your_woman" name = "性別" value = "女"></li>
+		</ul>
+		<dt>
+			年齢
+		<dt>
+		<ul>
+		<li>
+			<label for = "your_old1">20才未満</label>
+			<input type = "checkbox" id = "your_old1" name = "your_old" value = "20才未満"></li>
+		<li>
+			<label for = "your_old2">20代</label>
+			<input type = "checkbox" id = "your_old2" name = "your_old" value = "20代"></li>
+		<li>
+			<label for = "your_old3">30代</label>
+			<input type = "checkbox" id = "your_old3" name = "your_old" value = "30代"></li>
+		<li>
+			<label for = "your_old4">40歳以上</label>
+			<input type = "checkbox" id = "your_old4" name = "your_old" value = "40歳以上"></li>
+		</ul>
+		<p>
+			<dt>
+				出身国
+				<dt>
+			<select name = "出身国">
+			<option name = "日本" value = "日本">日本</option>
+			<option  value = "アメリカ">アメリカ</option>
+			<option  value = "中国">中国</option>
+			<option  value = "イギリス">イギリス</option>
+			</select>
+	<dt>
+		</p>
+		</dt>
+		<label for = "texter">備考欄</label>
+		<dd><textarea id = "texter" name = "text" cols = "100" rows ="10"></textarea>
+			</dd>
+
+			<dt>
+				<p><input type = "submit" value = "送信する"></p>
+
+
+				</form>
+	</body>
+	</html>
