@@ -1,5 +1,6 @@
 <!-- "<!" ">"に-×2を付け加えたもので、コメントアウト（メモ）が可能に（画面に反映されないメモ）-->
 
+<!--フォルダが違う場合は今のところ軒並みNG-->
 
 <!DOCTYPE html>
 <html lang = "ja">
@@ -10,20 +11,20 @@
 	<body>
 <p>以下より質問コーナーへ移ります。</p>
 <p>
-	<a href = "/Users/shimizuisamuma/Desktop/html/test.html">
+	<a href = "./test1.html">
 		 Q&Aページへ
 	</a>
 </p>
 <p>
-	<a href = "./../html1/test1.html">
-		test1はこちら
+	<a href = "./test2.html">
+		やるべきことリストはこちら
 		</a>
 </p>
 <p>
-	<a href = "./Q&A3.html" target = "_blank"> <!--リンク先し設定-->
+	<a href = "./test3.html" target = "_blank"> <!--リンク先し設定-->
 		Q&Aへ
 	</a>
 </P>
-<button onclic= "location.herf='./../test.html'">ボタンテスト</button>
+<button onclick="location.href='../../index.html'">戻るボタンテスト</button>
 	</body>
 	</html>
